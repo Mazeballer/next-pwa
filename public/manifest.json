@@ -1,0 +1,25 @@
+{
+  "name": "pwa",
+  "short_name": "next-pwa",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#50b7dc",
+  "theme_color": "#8936FF",
+  "orientation": "any",
+  "lang": "en-US",
+  "dir": "auto",
+  "icons": [
+    {
+      "src": "icon512_maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon512_rounded.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

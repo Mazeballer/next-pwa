@@ -1,7 +1,17 @@
+// next.config.ts
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+// Use dynamic import for CommonJS modules in TypeScript
+const withPWA = require("next-pwa");
+
+const config: NextConfig = {
+  reactStrictMode: true,
 };
 
-export default nextConfig;
+// Apply the withPWA wrapper to the config
+export default withPWA({
+  dest: "public",
+  register: true,
+  skipWaiting: true,
+  disable: process.env.NODE_ENV === "development",
+})(config);
