@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button";
+import { EventLeadsSearch } from "@/components/ui/custom/event-leads-search"
 
 export default function Home() {
   return (
-    <div>
-      <Button>Click me</Button>
-    </div>
-  );
+    <main className="min-h-screen bg-background">
+      <EventLeadsSearch />
+    </main>
+  )
 }
