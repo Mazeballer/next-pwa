@@ -24,6 +24,7 @@ import {
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ModeToggle } from "@/components/ui/custom/mode-toggle"
+import { Logo } from "@/components/ui/custom/logo"
 
 // Add mock data for the search results
 const mockLeads = [
@@ -144,8 +145,11 @@ export function EventLeadsSearch() {
   return (
     <div className="w-full max-w-6xl mx-auto p-4 space-y-6">
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold">Event Leads</h1>
-         <ModeToggle />
+        <div className="flex items-center gap-3">
+          <Logo width={100} height={40} />
+          <h1 className="text-2xl font-bold">Leads Database</h1>
+        </div>
+        <ModeToggle />
       </div>
 
       {/* Date Range */}
