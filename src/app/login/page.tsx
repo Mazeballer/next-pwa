@@ -13,6 +13,7 @@ import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/custom/checkbox"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Logo } from "@/components/ui/custom/logo"
+import { ModeToggle } from "@/components/ui/custom/mode-toggle"
 
 export default function LoginPage() {
   const [email, setEmail] = useState("")
@@ -56,13 +57,16 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900 p-4">
+      <div className="absolute top-4 right-4">
+        <ModeToggle />
+      </div>
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
           <div className="flex justify-center mb-2">
             <Logo width={150} height={50} />
           </div>
-          <CardTitle className="text-2xl font-bold text-center">Leads Database</CardTitle>
+          <CardTitle className="text-2xl font-bold text-center">Event Leads</CardTitle>
           <CardDescription className="text-center">Enter your credentials to access your account</CardDescription>
         </CardHeader>
         <CardContent>
